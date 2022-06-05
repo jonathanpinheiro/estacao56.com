@@ -8,7 +8,7 @@
     text-decoration:none;
 }
 body{
-    font-size: 100%;
+    font-size: 12pt;
     font-family: 'montserrat', sans-serif;
     background-color:#fff
 }
@@ -17,100 +17,29 @@ header{
     display:flex;
     justify-content:space-between;
     background-color:#000;
-    
 }
-/*
-ESCREVER CÓDIGO PAR AUM MENU FIXO NA TELA DURANTE A LANDING PAGE INTEIRA
-
-.menu{
-    display:block;
-    position:absolute;
-    
-}*/
-.cabecalho-imagem{
-    height:50px;
-    width:270px;
-    margin: 10px;
-    cursor: pointer;
-}
-.cabecalho-menu{
-    height: 70px;
-    width: fit-content;
-    justify-content: space-between;
-    display:flex;
-    align-items:center;
-}
-.cabecalho-menu-item{
+a.nav-item{
     color:#fff;
-    list-style-type: none;
-    margin:10px;
-    border-radius:5px;
-    height: 30px;
-    padding: 5px;
-    justify-content: space-between;
-    align-items:center;
-    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
 
 }
-.cabecalho-menu-item:hover{
-    background-color: #1a1919;
+a:hover{
+    opacity:0.7;
 }
-.cabecalho-menu-imagem{
-    margin:10px;
-    border-radius:5px;
-    height:30px;
-    width:30px;
-    padding:5px;
-    align-items: center;
-    cursor:pointer;
+nav{
+    display: flex;
+    justify-content: space-arround;
+    align-items:center;
+    font-family:'Emblema one', 'Times New Roman', Times, serif;
+    background:#000;
+    height: 8vh;
 }
-.cabecalho-menu-imagem:hover{
-    background-color: #1a1919;
-}
-h1{
-    font-family: 'Emblema one', 'Times New Roman', Times, serif;
-    font-size: 46px;
-}
-.carrossel{
-    height:100%;
-    width:100%;
-    object-fit:cover;
-}
-.conteudo-principal{
-    width:80%; 
-    align-items: center;
-    justify-content: space-between;
+.nav-list{
+    list-style: none;
     display: flex;
 }
-.texto-conteudo-principal{
-    padding: 5%;
-    justify-content: center;
-    text-align:left;
-    flex-direction: column;
-   
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
-.imagem-conteudo-principal{
-    padding:5%;
-    justify-content:space-between;
-    flex-direction: column;
-}
-div.galeria{
-    background-color: #fff;
-}
-@media only screen and (max-width:700px){
-    .ajustavel{
-        padding: 0 6px;
-        float:left;
-        width: 25%;
-    }
-}
-@media only screen and (max-width:500px){
-    .responsive{
-        width: 100%;
-    }
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
